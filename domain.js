@@ -1,0 +1,1 @@
+import getDomainInfo from './domain.js';

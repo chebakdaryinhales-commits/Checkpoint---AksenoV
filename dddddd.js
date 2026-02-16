@@ -1,8 +1,8 @@
 function flatten(array){
     let result = [];
     for (const item of array) {
-        if (Array.isArray(item)) {
-            result = result.concat(flatten(item))
+        if (Array.isArray(item)) {   // Являетя ли массивом, элемент в массиве
+            result = result.concat(flatten(item)) //Array типа как number - определяет тип объекта
 
         } else {
             result.push(item)
