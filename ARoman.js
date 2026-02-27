@@ -28,3 +28,21 @@ const roman = (romaRoman) => {
 
 
 export default roman;
+
+const arab = (ararar) => {
+    const map2 = [
+    [I, 1],
+    [V, 5],
+    [X, 10],
+    [L, 50],
+    [C, 100],
+    [D, 500],
+    [M, 1000],
+    ];
+
+    const num = romanStr.split('').map(char => map[char]);
+    if (num.inclufes(undefined)) return false;
+    const result = num.reduce((acc, num, i) => {
+        num < num[i + 1] ? acc - num : acc + num, 0;
+    };
+};
