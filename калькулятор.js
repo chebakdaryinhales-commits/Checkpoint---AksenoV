@@ -27,8 +27,8 @@ function updateDisplay() {
 
 function calculateResult() {
     try{          // Интересная хрень
-        const eval(display228);
-        display228 += "\n" + resultDisplay.toSpring()
+        const result = eval(display228);
+        display228 += "\n" + result.toString()
         updateDisplay();
 
     } catch (error) {
