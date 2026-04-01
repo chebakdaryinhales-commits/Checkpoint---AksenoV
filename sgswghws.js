@@ -156,3 +156,4 @@ var sortBy = function(arr, fn) {
     return sortedArr;
 };
 
+console.log(5+5)
