@@ -139,7 +139,7 @@ const sortedArr = (arr) => {
         }
     }
     return arr;
-};*/
+};
 
 
 var sortBy = function(arr, fn) {
@@ -170,4 +170,23 @@ const longestCommonPrefix = (strs) => {
     }
 
     return first.substring(0, i);
+};*/
+
+const numbs = [1, 2, 3, 4]
+
+const fn = numbs.reduce((acc, value) => acc + value, 0)
+
+const arr = [1, 2, 3, 4, 5]
+const size = 1
+
+var chunk = function(arr, size) {
+    const chunky = []
+    let index = 0
+    while (index < arr.length) {
+        chunky.push(arr.slice(index, index + size))
+        index  += size
+    }
+    return chunky;
 };
+
+console.table(chunk(arr, size))
